@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spotify</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="img">
+        <img src="Capture.PNG" alt="spotify-icon" />
+      </div>
+      <h1 class="wrd">Log in to Spotify</h1>
+
+      <button type="button" class="btn1">
+        <img src="Group 3019.png" class="g-icon" />
+        Continue with Google
+      </button>
+      <button type="button" class="btn2">
+        <img src="face.PNG" class="f-icon" />
+        Continue with Facebook
+      </button>
+      <button type="button" class="btn3">
+        <img src="apple.PNG" class="a-icon" />
+        Continue with Apple
+      </button>
+
+      <div class="divider"></div>
+
+      <label for="email">Email or username</label>
+      <input type="email" id="email" placeholder="Email or username" required />
+      <!-- <div class="pass-box">
+        <input type="password" id="password" placeholder="Password" required />
+        <span class="eye" onclick="togglePassword()">👁</span>
+      </div> -->
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Password" required />
+      <div class="remember">
+        <label class="remember-label">
+          <span class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </span>
+          <span class="text">Remember me</span>
+        </label>
+      </div>
+
+      <button type="button" class="btn4">Log in</button>
+      <a href="#">Forget your password?</a>
+    </div>
+    <script src="style.js"></script>
+  </body>
+</html>
