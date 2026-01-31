@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -19,11 +20,17 @@ body {
 .login {
   height: 100vh;
   width: 600px;
-  background-color: rgb(0, 0, 0);
+  background-color: #000;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 25px 0;
 }
+
+.center-x {
+  margin-left: 26%;
+}
+
 .login .img {
   display: flex;
   justify-content: center;
@@ -32,22 +39,21 @@ body {
 
 .login .img img {
   width: 50px;
-  height: auto;
   border-radius: 25px;
 }
+
 .login .wrd {
-  justify-content: center;
   display: flex;
-  margin-top: 20px;
+  justify-content: center;
+  margin: 20px 0 10px;
 }
+
 .login button {
   width: 55%;
   height: 45px;
   background: #000;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   border-radius: 30px;
   font-size: 14px;
   font-weight: 600;
@@ -56,61 +62,61 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+.btn1,
+.btn2,
+.btn3,
+.btn4 {
   margin-left: 26%;
 }
-.g-icon {
-  width: 30px;
-  height: 30px;
-  margin-top: 8px;
-  border-radius: 5px;
+
+.login .btn4 {
+  background-color: #17721a;
+  border: none;
+  color: #ccc;
 }
-.f-icon {
-  width: 30px;
-  height: 30px;
-  margin-top: 8px;
-  border-radius: 30px;
-}
-.a-icon {
-  width: 30px;
-  height: 30px;
-  margin-top: 8px;
-  border-radius: 5px;
-  margin-left: 3px;
-}
+
 .login label {
   font-size: 11px;
   color: #888;
-  margin-left: 26%;
+  margin-top: 12px;
 }
 
 .login input {
   height: 36px;
   padding: 8px 10px;
   font-size: 13px;
-  background-color: #000;
+  background: #000;
   width: 50%;
-  margin-left: 26%;
-  color: #ffffff;
+  color: #fff;
   border: 1px solid #555;
   outline: none;
-  transition: border-color 0.3s ease;
+  transition: 0.3s;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
+
 .login input:focus {
   border-color: #a31717;
 }
 
-.login .btn4 {
-  color: #ccc;
-  background-color: #17721a;
-  border: none;
-}
-.login a {
-  text-align: center;
-  color: #ccc;
-}
+.login label,
+.login input,
 .remember {
-  margin-top: 15px;
+  margin-left: 26%;
 }
+
+.remember {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 4px;
+  width: 50%;
+  margin-left: 80px;
+}
+
 .remember-label {
   display: flex;
   align-items: center;
@@ -157,48 +163,46 @@ body {
 .switch input:checked + .slider:before {
   transform: translateX(21px);
 }
-
+@media (max-width: 600px) {
+  .remember {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+}
 .divider {
   width: 70%;
   height: 1px;
   background: #333;
   margin: 20px auto;
 }
-/* .pass-box {
-  position: relative;
-  display: inline-block;
+
+.login a {
+  text-align: center;
+  color: #ccc;
+  margin-top: 15px;
+  font-size: 13px;
 }
 
-.pass-box input {
-  width: 45%;
-  padding-right: 40px;
-  height: 40px;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 1px solid #555;
-  color: #fff;
-  box-sizing: border-box;
+.f-icon {
+  font-size: 20px;
+  margin-left: 5px;
+  gap: 8px;
 }
 
-.pass-box .eye {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-} */
+.a-icon {
+  font-size: 25px;
+  margin-right: 8px;
+  gap: 8px;
+}
+.g-icon {
+  font-size: 20px;
+  gap: 8px;
+}
+
 @media (max-width: 600px) {
-  .login input {
-    width: 95%;
-    height: 42px;
-    font-size: 15px;
-    margin-left: 0;
-  }
-
+  .login input,
   .login button {
     width: 95%;
-    height: 50px;
-    font-size: 16px;
     margin-left: 0;
   }
 
@@ -206,21 +210,30 @@ body {
     width: 90%;
     margin: 20px auto;
     padding: 15px;
-    gap: 12px;
     height: auto;
   }
 
   .login label,
-  .remember-label {
+  .remember {
     margin-left: 0;
   }
 
   .login .img img {
     width: 40px;
-    height: auto;
   }
 
   .login .wrd {
+    font-size: 20px;
     margin-top: 15px;
   }
+
+  .login a {
+    margin-top: 12px;
+  }
+}
+
+.google-color {
+  background: linear-gradient(45deg, #971717, #fbbc05, #53fb05, #031e97);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

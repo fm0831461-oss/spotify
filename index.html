@@ -1,27 +1,38 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>spotify</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="login">
       <div class="img">
         <img src="Capture.PNG" alt="spotify-icon" />
       </div>
+
       <h1 class="wrd">Log in to Spotify</h1>
 
       <button type="button" class="btn1">
-        <img src="Group 3019.png" class="g-icon" />
+        <i class="fa-brands fa-google g-icon google-color"></i>
+
         Continue with Google
       </button>
+
       <button type="button" class="btn2">
-        <img src="face.PNG" class="f-icon" />
+        <i class="fa-brands fa-facebook-f f-icon fb-circle"></i>
+
         Continue with Facebook
       </button>
+
       <button type="button" class="btn3">
-        <img src="apple.PNG" class="a-icon" />
+        <i class="fa-brands fa-apple a-icon"></i>
+
         Continue with Apple
       </button>
 
@@ -29,12 +40,9 @@
 
       <label for="email">Email or username</label>
       <input type="email" id="email" placeholder="Email or username" required />
-      <!-- <div class="pass-box">
-        <input type="password" id="password" placeholder="Password" required />
-        <span class="eye" onclick="togglePassword()">👁</span>
-      </div> -->
       <label for="password">Password</label>
       <input type="password" id="password" placeholder="Password" required />
+
       <div class="remember">
         <label class="remember-label">
           <span class="switch">
@@ -46,8 +54,8 @@
       </div>
 
       <button type="button" class="btn4">Log in</button>
+
       <a href="#">Forget your password?</a>
     </div>
-    <script src="style.js"></script>
   </body>
 </html>
