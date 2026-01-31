@@ -88,7 +88,7 @@ body {
   padding: 8px 10px;
   font-size: 13px;
   background-color: #000;
-  width: 45%;
+  width: 50%;
   margin-left: 26%;
   color: #ffffff;
   border: 1px solid #555;
@@ -188,38 +188,33 @@ body {
   cursor: pointer;
 } */
 @media (max-width: 600px) {
-  /* الفورم يوسع ويظل في الوسط */
+  .login input {
+    width: 95%;
+    height: 42px;
+    font-size: 15px;
+    margin-left: 0;
+  }
+
+  .login button {
+    width: 95%;
+    height: 50px;
+    font-size: 16px;
+    margin-left: 0;
+  }
+
   .login {
-    width: 90%; /* الفورم ياخد أغلب الشاشة */
+    width: 90%;
     margin: 20px auto;
     padding: 15px;
-    height: auto;
     gap: 12px;
+    height: auto;
   }
 
-  /* Inputs يملوا عرض أكبر ويكبر الخط */
-  .login input {
-    width: 95%; /* عرض أكبر */
-    height: 42px; /* ارتفاع أكبر */
-    font-size: 15px; /* خط أكبر */
-    margin-left: 0; /* في الوسط */
-  }
-
-  /* Buttons يملوا عرض أكبر ويكبر الخط */
-  .login button {
-    width: 95%; /* عرض أكبر */
-    height: 50px; /* ارتفاع أكبر */
-    font-size: 16px; /* خط أكبر */
-    margin-left: 0; /* في الوسط */
-  }
-
-  /* Labels و Remember label تتوسط */
   .login label,
   .remember-label {
     margin-left: 0;
   }
 
-  /* الأيقونة الرئيسية تصغر شوي لتناسب الموبايل */
   .login .img img {
     width: 40px;
     height: auto;
