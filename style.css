@@ -188,25 +188,38 @@ body {
   cursor: pointer;
 } */
 @media (max-width: 600px) {
+  /* الفورم يوسع ويظل في الوسط */
   .login {
-    width: 90%;
+    width: 90%; /* الفورم ياخد أغلب الشاشة */
     margin: 20px auto;
     padding: 15px;
     height: auto;
     gap: 12px;
   }
 
-  .login input,
-  .login button {
-    width: 100%;
-    margin-left: 0;
+  /* Inputs يملوا عرض أكبر ويكبر الخط */
+  .login input {
+    width: 95%; /* عرض أكبر */
+    height: 42px; /* ارتفاع أكبر */
+    font-size: 15px; /* خط أكبر */
+    margin-left: 0; /* في الوسط */
   }
 
+  /* Buttons يملوا عرض أكبر ويكبر الخط */
+  .login button {
+    width: 95%; /* عرض أكبر */
+    height: 50px; /* ارتفاع أكبر */
+    font-size: 16px; /* خط أكبر */
+    margin-left: 0; /* في الوسط */
+  }
+
+  /* Labels و Remember label تتوسط */
   .login label,
   .remember-label {
     margin-left: 0;
   }
 
+  /* الأيقونة الرئيسية تصغر شوي لتناسب الموبايل */
   .login .img img {
     width: 40px;
     height: auto;
