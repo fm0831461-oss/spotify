@@ -41,10 +41,12 @@ body {
   margin-top: 20px;
 }
 .login button {
-  width: 50%;
+  width: 55%;
   height: 45px;
   background: #000;
   color: #fff;
+  display: flex;
+  justify-content: center;
   border: 1px solid #ffffff;
   border-radius: 30px;
   font-size: 14px;
