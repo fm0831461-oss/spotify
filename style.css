@@ -187,3 +187,32 @@ body {
   transform: translateY(-50%);
   cursor: pointer;
 } */
+@media (max-width: 600px) {
+  .login {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    height: auto;
+    gap: 12px;
+  }
+
+  .login input,
+  .login button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .login label,
+  .remember-label {
+    margin-left: 0;
+  }
+
+  .login .img img {
+    width: 40px;
+    height: auto;
+  }
+
+  .login .wrd {
+    margin-top: 15px;
+  }
+}
